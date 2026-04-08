@@ -46,3 +46,20 @@ out/
 _site/
 *.css
 !petclinic.css
+
+### Logs ###
+*.log
+logs/
+
+### OS files ###
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+### Spring Boot Devtools ###
+/spring-boot-devtools/
+
+### Temporary / backup files ###
+*.tmp
+*.bak
+*.orig
