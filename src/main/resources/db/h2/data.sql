@@ -1,3 +1,5 @@
+-- Done
+-- File insert dữ liệu ban đầu
 INSERT INTO vets VALUES (default, 'James', 'Carter');
 INSERT INTO vets VALUES (default, 'Helen', 'Leary');
 INSERT INTO vets VALUES (default, 'Linda', 'Douglas');

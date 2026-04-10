@@ -1,3 +1,5 @@
+-- Done
+-- File tạo bảng
 DROP TABLE vet_specialties IF EXISTS;
 DROP TABLE vets IF EXISTS;
 DROP TABLE specialties IF EXISTS;
