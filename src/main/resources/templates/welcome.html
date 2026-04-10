@@ -1,16 +1,18 @@
+<!--Done-->
+<!--Đây là thymeleaf template -->
 <!DOCTYPE html>
 
+<!--th đại diện cho Thymeleaf attr-->
+
 <html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
-
 <body>
-
   <h2 th:text="#{welcome}">Welcome</h2>
   <div class="row">
     <div class="col-md-12">
-      <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}" />
+      <img class="img-responsive"
+           th:src="@{/resources/images/pets.png}"
+           alt="pets"/>
     </div>
   </div>
-
 </body>
-
 </html>
