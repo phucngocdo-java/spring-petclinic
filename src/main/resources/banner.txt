@@ -1,4 +1,4 @@
-
+Hiển thị banner khi app khởi động
 
               |\      _,,,--,,_
              /,`.-'`'   ._  \-;;,_

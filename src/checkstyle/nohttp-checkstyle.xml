@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!--config của Checkstyle để kiểm tra rule “no HTTP” trong project Spring-->
 <!DOCTYPE module PUBLIC
 		"-//Puppy Crawl//DTD Check Configuration 1.2//EN"
 		"https://checkstyle.org/dtds/configuration_1_2.dtd">

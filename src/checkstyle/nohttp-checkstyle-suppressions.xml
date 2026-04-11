@@ -2,6 +2,14 @@
 <!DOCTYPE suppressions PUBLIC
 		"-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
 		"https://checkstyle.org/dtds/suppressions_1_2.dtd">
+<!--Check style , file này được gọi đến từ file:
+spring-petclinic\src\checkstyle\nohttp-checkstyle.xml-->
+<!-- Khi chạy mvn spring-boot:run thì
+1. compile code
+2. chạy plugin (nếu có)
+3. start Spring Boot app
+Check style (file này) nằm ở bước 1 hoặc bước 2
+-->
 <suppressions>
 	<suppress files="node_modules[\\/].*" checks=".*"/>
 	<suppress files="node[\\/].*" checks=".*"/>
