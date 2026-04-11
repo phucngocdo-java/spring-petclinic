@@ -1,3 +1,4 @@
+// Done
 package org.springframework.samples.petclinic.system;
 
 import org.springframework.context.annotation.Bean;
@@ -11,6 +12,12 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import java.util.Locale;
 
 /**
+ *
+ * Web MVC configuration class
+ * dùng để tùy chỉnh behavior của Spring MVC
+ * Cụ thể: Cho phép đổi ngôn ngữ giao diện bằng URL và lưu ngôn ngữ theo session của user.
+ * Thường nằm trong folder config hoặc system
+ *
  * Configures internationalization (i18n) support for the application.
  *
  * <p>

@@ -1,3 +1,13 @@
+// Done
+// Cấu hình cache “vets” trong Spring Boot bằng chuẩn JCache (JSR-107)
+// App chạy
+//   ↓
+// @Cacheable("vets")
+//   ↓
+// Spring check cache (RAM)
+//   ↓
+// Nếu có → trả luôn
+// Nếu không → query DB → lưu vào cache
 /*
  * Copyright 2012-2025 the original author or authors.
  *

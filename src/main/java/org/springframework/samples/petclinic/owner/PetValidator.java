@@ -1,3 +1,7 @@
+// Done
+// giống Laravel Validation
+// để kiểm tra dữ liệu hợp lệ (validation) của form Pet trước khi lưu hoặc xử lý.
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

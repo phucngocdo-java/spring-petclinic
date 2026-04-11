@@ -1,3 +1,8 @@
+// DOne
+// lớp base (lớp cha dùng chung) trong JPA, giống NamedEntity,
+// nhưng dùng cho các entity đại diện cho con người (Person).
+//Các lớp con sẽ kế thừa các thuộc tính và phương thức của lớp cha
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

@@ -1,3 +1,5 @@
+// Done
+// JPA Entity - ánh xạ đến bảng vets
 /*
  * Copyright 2012-2025 the original author or authors.
  *

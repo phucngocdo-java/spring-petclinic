@@ -1,3 +1,8 @@
+// Tạm thời bỏ qua
+// File RuntimeHints dùng để khai báo trước cho Spring biết những class/resource sẽ dùng
+// khi build Native Image (GraalVM), giúp app chạy được mà không cần JVM runtime reflection.
+// -> Liên quan đến quá trình build dể deploy
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

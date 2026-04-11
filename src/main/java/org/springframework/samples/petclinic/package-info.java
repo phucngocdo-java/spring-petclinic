@@ -1,3 +1,7 @@
+//Done
+//File mô ta package, không quan trọng  => Bỏ qua
+// Package là “thư mục logic” dùng để nhóm các class/interface lại với nhau theo chức năng.
+// org.springframework.samples.petclinic là 1 package
 /*
  * Copyright 2012-2025 the original author or authors.
  *

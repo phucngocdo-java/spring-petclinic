@@ -1,3 +1,9 @@
+// Done
+// Giống transformer trong Laravel
+// Formatter trong Spring MVC,
+// dùng để chuyển đổi giữa String ↔ Object (PetType) khi xử lý request/response.
+
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

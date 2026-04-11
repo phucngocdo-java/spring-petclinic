@@ -1,3 +1,16 @@
+// Done
+// Hiển thị lỗi trên browser
+//Browser gọi /oups
+//        ↓
+//Controller nhận request
+//        ↓
+//throw RuntimeException
+//        ↓
+//Spring Boot bắt exception
+//        ↓
+//chuyển sang error handler
+//        ↓
+//hiển thị error page
 /*
  * Copyright 2012-2025 the original author or authors.
  *

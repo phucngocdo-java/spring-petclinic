@@ -1,3 +1,4 @@
+// Done
 /*
  * Copyright 2012-2025 the original author or authors.
  *
@@ -20,6 +21,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * Trang home thôi
+ */
 @Controller
 class WelcomeController {
 

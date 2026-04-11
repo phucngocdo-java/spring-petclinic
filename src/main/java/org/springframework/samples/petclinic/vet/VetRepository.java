@@ -1,3 +1,6 @@
+// 1 Repository
+// Thường viết trong 1 folder repository trong package
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

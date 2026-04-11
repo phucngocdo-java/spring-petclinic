@@ -1,3 +1,7 @@
+// Done
+// là một lớp base (lớp cha dùng chung) cho các entity trong database có thuộc tính name
+//Các lớp con sẽ kế thừa các thuộc tính và phương thức của lớp cha
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

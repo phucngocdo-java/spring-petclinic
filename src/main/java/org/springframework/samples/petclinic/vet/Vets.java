@@ -1,3 +1,20 @@
+// Là 1 Wrapper / DTO (data container), thường đặt trong folder dto trong package
+// Chứa danh sách các vet
+// DTO (Data Transfer Object) là một class dùng để truyền dữ liệu giữa các tầng trong ứng dụng,
+// đặc biệt là giữa backend và client (frontend/API).
+// Database
+//	↓
+//	VetRepository (List<Vet>)
+//	↓
+//	Controller
+//	↓
+//	Vets (DTO wrapper)
+//	↓
+//	JSON/XML
+//	↓
+//	Frontend
+
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

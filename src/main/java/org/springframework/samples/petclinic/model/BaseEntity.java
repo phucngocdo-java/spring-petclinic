@@ -1,3 +1,8 @@
+// Done
+// Tạo một “class cha” để các entity khác kế thừa
+// Các lớp con sẽ kế thừa các thuộc tính và phương thức của lớp cha
+// Thuường trong folder model của package
+
 /*
  * Copyright 2012-2025 the original author or authors.
  *

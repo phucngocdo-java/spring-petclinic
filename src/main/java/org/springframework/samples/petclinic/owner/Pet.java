@@ -32,6 +32,8 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OrderBy;
 import jakarta.persistence.Table;
+// Done
+// Là 1 JPA Entity
 
 /**
  * Simple business object representing a pet.
