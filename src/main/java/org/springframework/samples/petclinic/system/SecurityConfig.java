@@ -7,9 +7,9 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
- * File này là cấu hình Spring Security trong project Spring Boot (PetClinic).
- * Nó quyết định ai được truy cập vào URL nào và cách bảo vệ ứng dụng.
- * Spring thường có file này và nó được để trong folder system của package
+ * File này là cấu hình Spring Security trong project Spring Boot (PetClinic). Nó quyết
+ * định ai được truy cập vào URL nào và cách bảo vệ ứng dụng. Spring thường có file này và
+ * nó được để trong folder system của package
  */
 @Configuration
 public class SecurityConfig {

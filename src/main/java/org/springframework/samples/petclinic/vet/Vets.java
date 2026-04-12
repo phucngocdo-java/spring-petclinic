@@ -14,7 +14,6 @@
 //	↓
 //	Frontend
 
-
 /*
  * Copyright 2012-2025 the original author or authors.
  *
