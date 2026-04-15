@@ -63,3 +63,6 @@ Desktop.ini
 *.tmp
 *.bak
 *.orig
+
+#Không đẩy file log
+app.log

@@ -1,16 +1,28 @@
-// Là 1 Wrapper / DTO (data container), thường đặt trong folder dto trong package
+// Là 1 Wrapper(data container), thường đặt trong folder dto trong package
+// Phân biệt giữa wrapper và DTO nhé:
+//DTO = bản dữ liệu được “chọn lọc / biến đổi” từ entity (model)
+//Wrapper = bọc nhiều object lại + thêm metadata
+// File này giống wrapper nhiều hơn
+//trong Spring Boot bạn hoàn toàn có thể gọi trực tiếp Entity trong controller, không bắt buộc phải có DTO hay Wrapper.
+
 // Chứa danh sách các vet
-// DTO (Data Transfer Object) là một class dùng để truyền dữ liệu giữa các tầng trong ứng dụng,
+//Wrapper/ DTO (Data Transfer Object) là một class dùng để truyền dữ liệu giữa các tầng trong ứng dụng,
 // đặc biệt là giữa backend và client (frontend/API).
-// Database
-//	↓
-//	VetRepository (List<Vet>)
+//Client
 //	↓
 //	Controller
 //	↓
-//	Vets (DTO wrapper)
+//	Service
 //	↓
-//	JSON/XML
+//	Repository
+//	↓
+//	Entity (DB data)
+//	↓
+//	DTO (map/transform data)
+//	↓
+//	Wrapper (optional)
+//	↓
+//	Response (JSON/XML)
 //	↓
 //	Frontend
 

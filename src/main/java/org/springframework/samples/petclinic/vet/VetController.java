@@ -26,13 +26,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author Juergen Hoeller
- * @author Mark Fisher
- * @author Ken Krebs
- * @author Arjen Poutsma
- */
+@Slf4j
 @Controller
 class VetController {
 
@@ -42,37 +38,56 @@ class VetController {
 		this.vetRepository = vetRepository;
 	}
 
+	/**
+	 * Done
+	 * @param page: page lấy từ param url, không có param page thì page mặc định là 1
+	 * @param model
+	 * @return
+	 */
 	@GetMapping("/vets.html")
 	public String showVetList(@RequestParam(defaultValue = "1") int page, Model model) {
-		// Here we are returning an object of type 'Vets' rather than a collection of Vet
-		// objects so it is simpler for Object-Xml mapping
 		Vets vets = new Vets();
 		Page<Vet> paginated = findPaginated(page);
 		vets.getVetList().addAll(paginated.toList());
+
+		log.info("Loaded126 vets size = {}, page = {}, totalElements = {}", vets.getVetList().size(), page,
+				paginated.getTotalElements());
+
 		return addPaginationModel(page, paginated, model);
 	}
 
 	private String addPaginationModel(int page, Page<Vet> paginated, Model model) {
+
 		List<Vet> listVets = paginated.getContent();
+
 		model.addAttribute("currentPage", page);
 		model.addAttribute("totalPages", paginated.getTotalPages());
 		model.addAttribute("totalItems", paginated.getTotalElements());
 		model.addAttribute("listVets", listVets);
+
+		log.debug("Pagination added to model: page={}, size={}", page, listVets.size());
+
 		return "vets/vetList";
 	}
 
 	private Page<Vet> findPaginated(int page) {
+
 		int pageSize = 5;
 		Pageable pageable = PageRequest.of(page - 1, pageSize);
+
+		log.debug("Fetching vets from DB: page={}, pageSize={}", page, pageSize);
+
 		return vetRepository.findAll(pageable);
 	}
 
 	@GetMapping({ "/vets" })
 	public @ResponseBody Vets showResourcesVetList() {
-		// Here we are returning an object of type 'Vets' rather than a collection of Vet
-		// objects so it is simpler for JSon/Object mapping
+
 		Vets vets = new Vets();
 		vets.getVetList().addAll(this.vetRepository.findAll());
+
+		log.info("REST API /vets returned size = {}", vets.getVetList().size());
+
 		return vets;
 	}
 
