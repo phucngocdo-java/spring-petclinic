@@ -1,3 +1,6 @@
+-- Done toan bộ
+--Tạo DB, file này khong duoc chay tự động mà chỉ được chạy thủ công
+-- Đã tạo thủ công qua PHPMyadmin thay cho file này.
 CREATE DATABASE IF NOT EXISTS petclinic;
 
 ALTER DATABASE petclinic
