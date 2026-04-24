@@ -74,6 +74,8 @@ class VetController {
 
 		int pageSize = 5;
 		// Pageable nằm trong thư viện spring data trong core của spring boot
+		// PageRequest là một class trong Spring Data Commons (thuộc Spring Data),
+		//tạo “thông tin phân trang” để gửi xuống database query
 		Pageable pageable = PageRequest.of(page - 1, pageSize);
 
 		log.debug("Fetching vets from DB: page={}, pageSize={}", page, pageSize);
