@@ -46,12 +46,11 @@ class VetController {
 	 */
 	@GetMapping("/vets.html")
 	public String showVetList(@RequestParam(defaultValue = "1") int page, Model model) {
+		// Không cần import Vets hoặc use như trong PHP vì cùng package
 		Vets vets = new Vets();
+		// Dùng generic trong java
 		Page<Vet> paginated = findPaginated(page);
 		vets.getVetList().addAll(paginated.toList());
-
-		log.info("Loaded126 vets size = {}, page = {}, totalElements = {}", vets.getVetList().size(), page,
-				paginated.getTotalElements());
 
 		return addPaginationModel(page, paginated, model);
 	}
@@ -70,9 +69,11 @@ class VetController {
 		return "vets/vetList";
 	}
 
-	private Page<Vet> findPaginated(int page) {
+	// Done
+	private Page<Vet> findPaginated(int page) { // nhận vào số trang page
 
 		int pageSize = 5;
+		// Pageable nằm trong thư viện spring data trong core của spring boot
 		Pageable pageable = PageRequest.of(page - 1, pageSize);
 
 		log.debug("Fetching vets from DB: page={}, pageSize={}", page, pageSize);
